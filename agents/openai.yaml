@@ -1,0 +1,4 @@
+interface:
+  display_name: "한양 아카데믹 플래너"
+  short_description: "졸업요건을 판정하고 다음 학사 행동을 안내합니다"
+  default_prompt: "Use $hanyang-academic-planner to analyze my academic status and create a grounded action plan."

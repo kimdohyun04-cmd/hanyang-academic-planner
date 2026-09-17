@@ -1,0 +1,109 @@
+{
+  "student": {
+    "name": "가상 학생",
+    "student_id": "2024000000",
+    "campus": "ERICA",
+    "college": "공학대학",
+    "department": "예시학과",
+    "admission_year": 2024,
+    "year": 3,
+    "status": "재학생",
+    "as_of": "2026-09-17"
+  },
+  "requirements": [
+    {
+      "id": "total_credits",
+      "label": "졸업학점",
+      "kind": "minimum",
+      "required": 130,
+      "completed": 72,
+      "in_progress": 18,
+      "unit": "학점",
+      "priority": "high",
+      "action": "현재 수강분 이수 후 남는 학점을 학기별로 배치하세요.",
+      "source_id": "graduation"
+    },
+    {
+      "id": "major_credits",
+      "label": "전공학점",
+      "kind": "minimum",
+      "required": 60,
+      "completed": 30,
+      "in_progress": 9,
+      "unit": "학점",
+      "priority": "high",
+      "action": "전공 개설 과목과 선수관계를 확인해 이수계획을 세우세요.",
+      "source_id": "graduation"
+    },
+    {
+      "id": "general_elective",
+      "label": "교양선택",
+      "kind": "minimum",
+      "required": 10,
+      "completed": 7,
+      "in_progress": 3,
+      "unit": "학점",
+      "priority": "medium",
+      "action": "현재 수강분을 정상 이수하면 기준 충족이 예상됩니다.",
+      "source_id": "graduation"
+    },
+    {
+      "id": "industry_cooperation",
+      "label": "산학협력영역",
+      "kind": "minimum",
+      "required": 6,
+      "completed": 0,
+      "in_progress": 0,
+      "unit": "학점",
+      "priority": "high",
+      "action": "산학협력영역 개설 과목을 확인해 남은 학기에 배치하세요.",
+      "source_id": "graduation"
+    },
+    {
+      "id": "english_courses",
+      "label": "영어전용강좌",
+      "kind": "minimum",
+      "required": 2,
+      "completed": 3,
+      "unit": "강좌",
+      "priority": "low",
+      "action": "현재 기준으로 충족되어 있습니다.",
+      "source_id": "graduation"
+    },
+    {
+      "id": "social_service",
+      "label": "사회봉사",
+      "kind": "boolean",
+      "satisfied": false,
+      "in_progress": false,
+      "priority": "high",
+      "action": "사회봉사 인정 교과목 또는 인정 절차를 확인하세요.",
+      "source_id": "graduation"
+    },
+    {
+      "id": "major_advanced",
+      "label": "전공심화",
+      "kind": "minimum",
+      "required": 18,
+      "completed": 0,
+      "unit": "학점",
+      "priority": "medium",
+      "action": "학과별 전공심화 인정 과목을 담당 부서에 확인하세요.",
+      "source_id": "graduation",
+      "needs_official_confirmation": true,
+      "note": "포털 표시가 비어 있어 0으로 입력함"
+    }
+  ],
+  "sources": [
+    {
+      "id": "graduation",
+      "title": "한양대학교 ERICA 학사안내 - 졸업",
+      "url": "https://ehaksa.hanyang.ac.kr/graduate",
+      "as_of": "2026-09-17"
+    }
+  ],
+  "limitations": [
+    "가상의 학생 데이터로 만든 예시입니다.",
+    "최종 졸업 가능 여부는 포털과 담당 부서에서 다시 확인해야 합니다."
+  ]
+}
