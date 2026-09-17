@@ -45,6 +45,16 @@ git clone https://github.com/kimdohyun04-cmd/hanyang-academic-planner ~/.claude/
 - "이 학사공지 나한테 해당돼?" (공지 본문 붙여넣기)
 - "전공심화 인정 여부를 학과에 물어볼 문의문 써줘"
 
+## Gemini 앱에서 사용
+
+Google AI Plus 학생 요금제 등 Gemini 앱에서는 스크립트를 PC에서 먼저 실행한 뒤 파일을 올려 사용합니다.
+
+```bash
+python3 scripts/evaluate_requirements.py 내자료.json --format json --output 결과.json
+```
+
+`SKILL.md`, `references/` 파일, `결과.json`을 Gemini에 올리고 "SKILL.md 절차대로 결과를 설명하고 할 일을 정리해줘"라고 요청합니다. 입력 파일의 이름·학번 칸은 비워 두세요.
+
 ## 폴더 구성
 
 | 경로 | 역할 |
